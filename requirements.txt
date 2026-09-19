@@ -1,0 +1,10 @@
+# Streamlit Community Cloud, Linux CPU. Colab uses its existing torch instead.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.8.0+cpu
+# Keep this version: the reference uses the image-to-text pipeline.
+transformers==4.56.2
+streamlit>=1.40,<2
+pillow>=10.4,<12
+sentencepiece>=0.2,<0.3
+gtts>=2.5.4,<3
+# No torchvision, device_map, or accelerate is needed by this reference.
